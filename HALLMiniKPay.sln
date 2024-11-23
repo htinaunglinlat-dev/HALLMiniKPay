@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HALLMiniKPay.RestApi", "HALLMiniKPay\HALLMiniKPay.RestApi.csproj", "{7CBDCEF9-0989-42E1-B974-98145ED69C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HALLMiniKPay.Database", "HALLMiniKPay.Database\HALLMiniKPay.Database.csproj", "{C5A9C39B-5C0F-4553-96C7-B507EE3FA980}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CBDCEF9-0989-42E1-B974-98145ED69C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBDCEF9-0989-42E1-B974-98145ED69C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBDCEF9-0989-42E1-B974-98145ED69C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBDCEF9-0989-42E1-B974-98145ED69C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A9C39B-5C0F-4553-96C7-B507EE3FA980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A9C39B-5C0F-4553-96C7-B507EE3FA980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A9C39B-5C0F-4553-96C7-B507EE3FA980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A9C39B-5C0F-4553-96C7-B507EE3FA980}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EF75451-F647-44CF-9327-B49CBCA5B9AD}
+	EndGlobalSection
+EndGlobal
