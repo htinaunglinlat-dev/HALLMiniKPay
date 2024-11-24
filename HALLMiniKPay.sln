@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HALLMiniKPay.RestApi", "HALLMiniKPay\HALLMiniKPay.RestApi.csproj", "{7CBDCEF9-0989-42E1-B974-98145ED69C47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HALLMiniKPay.RestApi", "HALLMiniKPay\HALLMiniKPay.RestApi.csproj", "{7CBDCEF9-0989-42E1-B974-98145ED69C47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HALLMiniKPay.Database", "HALLMiniKPay.Database\HALLMiniKPay.Database.csproj", "{C5A9C39B-5C0F-4553-96C7-B507EE3FA980}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HALLMiniKPay.Database", "HALLMiniKPay.Database\HALLMiniKPay.Database.csproj", "{C5A9C39B-5C0F-4553-96C7-B507EE3FA980}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AAAC5CB3-001F-45B8-A565-D3D421095FAB}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

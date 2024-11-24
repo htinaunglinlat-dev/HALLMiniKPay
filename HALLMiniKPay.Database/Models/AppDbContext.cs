@@ -15,17 +15,27 @@ public partial class AppDbContext : DbContext
     {
     }
 
+    public virtual DbSet<TblTransition> TblTransitions { get; set; }
+
     public virtual DbSet<TblWallet> TblWallets { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        if(!optionsBuilder.IsConfigured)
-        {
-            string connectionString = "Data Source=DESKTOP-UST9CM1\\SQLEXPRESS;Initial Catalog=Banking;User ID=sa;Password=sasa@123;TrustServerCertificate=True;";
-            optionsBuilder.UseSqlServer(connectionString);
-        }
-    }
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-UST9CM1\\SQLEXPRESS;Database=Banking;User Id=sa;Password=sasa@123;TrustServerCertificate=True;");
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<TblTransition>(entity =>
+        {
+            entity.HasKey(e => e.TransitionId);
+
+            entity.ToTable("Tbl_Transition");
+
+            entity.Property(e => e.Date).HasColumnType("datetime");
+            entity.Property(e => e.FromPhone).HasMaxLength(10);
+            entity.Property(e => e.ToPhone).HasMaxLength(10);
+        });
+
         modelBuilder.Entity<TblWallet>(entity =>
         {
             entity.HasKey(e => e.AccountId);

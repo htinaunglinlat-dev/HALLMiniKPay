@@ -20,10 +20,22 @@
         public string Pin { get; set; }
         public string ToPhone { get; set; }
         public long Amount { get; set; }
+        public string Note { get; set; }    
     }
     public class CheckBalanceViewModel
     {
         public string Phone { get; set; }
         public string Pin { get; set; }
+    }
+    public class AuthenticationViewModel {
+        public string Phone { get; set; }
+        public string Pin { get; set; }
+    }
+    public class CreateUserViewModel
+    {
+        public string Username { get; set; }
+        public string Phone { get; set; }
+        public string Pin { get; set; }
+        public long Amount { get; set; }
     }
 }
