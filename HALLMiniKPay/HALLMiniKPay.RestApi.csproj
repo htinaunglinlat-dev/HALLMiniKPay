@@ -8,11 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.18" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\HALLMiniKPay.Database\HALLMiniKPay.Database.csproj" />
+    <ProjectReference Include="..\HALLMiniKPay.Domain\HALLMiniKPay.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using HALLMiniKPay.Database.Models;
+using HALLMiniKPay.Domain.Models;
 using HALLMiniKPay.RestApi.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,12 +11,16 @@ namespace HALLMiniKPay.RestApi.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class WalletController : ControllerBase
+    //public class WalletController : BaseController1
     {
         private AppDbContext _db = new AppDbContext(); 
         [HttpGet("test/readAllWallets")]
         public IActionResult GetTestApi() {
             var wallet = _db.TblWallets.ToList();
             return Ok(wallet);
+            //TransferResponseModel model = new TransferResponseModel();
+            //model.Response = BaseResponseModel.Success("200", "ok here.");
+            //return ok(model);
         }
         [HttpPost("test/createFakeTransition")]
         public IActionResult PostTransition()
